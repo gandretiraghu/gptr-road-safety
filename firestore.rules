@@ -1,0 +1,47 @@
+
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // --- HELPER FUNCTIONS FOR SECURITY ---
+    
+    // Check if user is authenticated
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    // Check if the user ID matches the document ID
+    function isOwner(userId) {
+      return request.auth.uid == userId;
+    }
+
+    // Validate a Report Schema (Basic Check)
+    function isValidReport() {
+      let data = request.resource.data;
+      return data.keys().hasAll(['image', 'location', 'timestamp', 'analysis']) &&
+             data.analysis.is_road == true;
+    }
+
+    // --- COLLECTION RULES ---
+
+    // 1. REPORTS: Public Read, Strict Create
+    match /reports/{reportId} {
+      allow read: if true; // Public can see potholes (Civic Transparency)
+      allow create: if isValidReport(); // Any valid report is accepted (Anonymous or Auth)
+      allow update: if false; // Reports are immutable evidence (Cannot be faked later)
+      allow delete: if false; // Evidence cannot be destroyed
+    }
+
+    // 2. USERS: Protected Profiles
+    match /users/{userId} {
+      allow read: if true; // Leaderboard needs public read
+      allow write: if isOwner(userId); // Only the user can edit their own profile
+    }
+    
+    // 3. HEALTH CHECKS
+    match /_health_check/{docId} {
+      allow read: if true;
+    }
+  }
+}
