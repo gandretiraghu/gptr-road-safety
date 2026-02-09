@@ -42,6 +42,8 @@ GPTR (Global Pothole & Traffic Risk) is a **Decision Support System**. It remove
 ---
 
 ## ⚙️ System Architecture Overview
+![GPTR Project Mind Map](./assets/project%20Mind%20Map.png)
+
 
 The system operates on a decentralized **"Detect -> Verify -> Resolve"** loop:
 
