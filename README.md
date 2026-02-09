@@ -314,3 +314,44 @@ Encouraging sustained civic participation.
 ---
 
 ### *GPTR: Transforming Passive Complaints into Active, Verifiable Intelligence.*
+
+## 📸 Application Screenshots
+
+### 🏠 Main Dashboard
+![GPTR Main Dashboard](./assets/app%20mainpage.jpeg)
+
+### 👤 User Dashboard
+![User Dashboard](./assets/user%20dashboard.jpg.jpeg)
+
+### 🧠 AI Hazard Analysis (Single Report)
+![AI Analysis](./assets/detailed%20analysis.jpg.jpeg)
+
+### 🧠 Advanced AI Analysis (Multi-factor)
+![Advanced AI Analysis](./assets/multi%20detailed%20analysis.jpg.jpeg)
+
+### 🗺️ Live Hazard Map
+![Live Hazard Map](./assets/map%20static%20view%20.jpg.jpeg)
+
+### 📊 Aggregated Hazard Reports (By Category)
+![Aggregated Reports](./assets/all%20data%20report%20by%20category.jpg.jpeg)
+
+### 🔗 Social Auto-Escalation
+![Social Share](./assets/SOCIAL%20SHARE%20.jpg.jpeg)
+
+### 🏆 Gamification & Leaderboard
+![Leaderboard](./assets/Leader%20board.jpg.jpeg)
+
+### 🔐 API & Data Access
+![API Panel](./assets/API%20.jpg.jpeg)
+
+### 🛡️ Safety Board
+![Safety Board](./assets/safety%20board.jpg.jpeg)
+
+---
+## ⚙️ System Architecture Overview
+
+![GPTR Project Mind Map](./assets/project%20Mind%20Map.png)
+
+
+
+
