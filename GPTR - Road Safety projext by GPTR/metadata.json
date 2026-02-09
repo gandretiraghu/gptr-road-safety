@@ -1,8 +1,0 @@
-{
-  "name": "GPTR - Road Safety",
-  "description": "Global Pothole & Traffic Risk Reporting System. A minimalist, AI-powered tool to detect and report road hazards.",
-  "requestFramePermissions": [
-    "camera",
-    "geolocation"
-  ]
-}
