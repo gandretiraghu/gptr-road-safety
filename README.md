@@ -287,8 +287,7 @@ Encouraging sustained civic participation.
 
 1.  **Clone Repository**
     ```bash
-    git clone https://github.com/your-username/gptr-road-safety.git
-    cd gptr-road-safety
+    git clone https://github.com/gandretiraghu/gptr-road-safety.git
     ```
 
 2.  **Install Dependencies**
